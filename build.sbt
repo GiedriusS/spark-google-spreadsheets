@@ -33,6 +33,6 @@ val publishCredentials =
     case _ => "" -> ""
   }
 
-credentials += Credentials("maven-hosted-oom", "nexus.vinted.net", publishCredentials._1, publishCredentials._2)
+credentials += Credentials("Sonatype Nexus Repository Manager", "nexus.vinted.net", publishCredentials._1, publishCredentials._2)
 
 publishTo := Some("maven-hosted-oom" at "https://nexus.vinted.net/repository/maven-hosted-oom")
