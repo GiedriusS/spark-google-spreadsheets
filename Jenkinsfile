@@ -9,6 +9,11 @@ pipeline {
         issueCommentTrigger('.*test this please.*')
     }
     stages {
+        stage('Test jenkins') {
+           steps {
+                sh 'echo test'
+           }
+        }
         stage('Test') {
             when {
                 not {
